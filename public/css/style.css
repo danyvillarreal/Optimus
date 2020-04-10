@@ -1,0 +1,179 @@
+body{
+    background-color: #fff;
+    /*background-color: #ededed;*/
+}
+.container > .row {
+    background-color: #f7f7f7; /*f8fafc*/
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.28);
+	box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.28);
+    padding:8px;
+}
+.article-box {
+    background-color: #f7f7f7; /*f8fafc*/
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.28);
+	box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.28);
+    padding:8px;
+}
+.table td, .table th{
+    padding: 5px;
+}
+
+/* Start radio style */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.product {
+    display: inline;
+}
+
+/*ini tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* Overright bootstrap style */
+.btn-group-sm > .btn, .btn-sm {
+    /*padding: 0.10rem .5rem;*/
+}
+.switch {
+    /*background-image: url('../images/check_box_outline_blank_black_20dp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;*/
+}
+.containerCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.containerCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    /*background-color: #eee;*/
+    opacity: .54;
+    background-image: url('../images/check_box_outline_blank_black_20dp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+/* On mouse-over, add a grey background color */
+.containerCheck:hover input ~ .checkmark {
+  background-color: #ccc;
+  opacity: 1;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheck input:checked ~ .checkmark {
+    background-image: url('../images/check_box_black_20dp.png');
+    /*background-color: #2196F3;*/
+}
+
+
+.demo input[type="checkbox"] {
+    display: none;
+}
+.demo input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background-image: url('../images/check_box_outline_blank_black_20dp.png');
+    opacity: .54;
+    background-size: cover;
+    cursor: pointer;
+    padding: 5px;
+}
+/* On mouse-over, add a grey background color */
+.demo:hover [type="checkbox"] + label span {
+  opacity: 1;
+}
+.demo input[type="checkbox"]:checked + label span {
+    background-image: url('../images/check_box_black_20dp.png');
+    opacity: 1;
+    background-size: cover;
+}
+.filename {
+    height: calc(2.19rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.devis-stared {
+    display: none;
+}
+
+.whole-page-overlay{
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 0;
+  position: fixed;
+  z-index: 1050;
+  display: none;
+}
+.whole-page-overlay .center-loader{
+  top: 50%;
+  left: 52%;
+  position: absolute;
+  color: white;
+}
